@@ -81,9 +81,9 @@ class MyApp extends StatelessWidget {
 }
 
 class MyContainer extends StatelessWidget {
-  String texto = "";
+  final String texto;
 
-  MyContainer(this.texto);
+  MyContainer({this.texto});
 
   @override
   Widget build(BuildContext context) {
