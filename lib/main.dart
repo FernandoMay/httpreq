@@ -61,9 +61,9 @@ class MyApp extends StatelessWidget {
               if (snapshot.hasData) {
                 return Column(
                   children: <Widget>[
-                    MyContainer(snapshot.data.userId.toString()),
-                    MyContainer(snapshot.data.title),
-                    MyContainer(snapshot.data.body),
+                    MyContainer(texto: snapshot.data.userId.toString()),
+                    MyContainer(texto: snapshot.data.title),
+                    MyContainer(texto: snapshot.data.body),
                   ],
                 );
               } else if (snapshot.hasError) {
